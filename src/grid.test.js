@@ -1,5 +1,5 @@
 import { CharNode, ArrayGrid } from './';
-import { rows } from './data/states';
+import { rows } from './puzzles/states';
 
 let grid;
 

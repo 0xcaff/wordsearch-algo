@@ -1,6 +1,5 @@
-import { solve, Directions } from '../';
+import { solve, Directions, puzzles } from '../';
 import algorithms from './algorithms';
-import puzzles from '../data';
 
 algorithms.forEach(({ name, f: findMatches }) => {
   describe(`${name} solver`, () => {

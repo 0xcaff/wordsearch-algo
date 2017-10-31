@@ -1,9 +1,8 @@
 /* eslint-disable no-console */
 
 import { Suite } from 'benchmark';
-import { solve, Directions } from '../';
+import { solve, Directions, puzzles } from '../';
 import algorithms from './algorithms';
-import puzzles from '../data';
 
 const suite = new Suite();
 

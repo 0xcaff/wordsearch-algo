@@ -2,12 +2,13 @@
   "name": "wordsearch-algo",
   "description": "A collection of algorithms for solving wordsearches.",
   "version": "1.0.0",
+  "license": "AGPL-1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/0xcaff/wordsearch-algo.git"
   },
   "main": "lib/index.js",
-  "files": [ "lib/" ],
+  "files": [ "lib/", "images/" ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
@@ -26,6 +27,12 @@
   "babel": {
     "presets": [
       "env"
+    ]
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/lib/"
     ]
   },
   "eslintConfig": {
