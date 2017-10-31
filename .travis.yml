@@ -11,8 +11,16 @@ cache:
     - "node_modules"
 
 script:
-  - yarn prepack
+  - yarn compile
   - yarn lint
   - yarn test
   - yarn benchmark
 
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: $NPM_EMAIL_ADDRESS
+  api_key: $NPM_AUTH_TOKEN
+
+  on:
+    branch: master

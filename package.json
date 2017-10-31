@@ -1,12 +1,13 @@
 {
   "name": "wordsearch-algo",
+  "description": "A collection of algorithms for solving wordsearches.",
   "version": "1.0.0",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/0xcaff/wordsearch-algo.git"
   },
   "main": "lib/index.js",
+  "files": [ "lib/" ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
@@ -17,7 +18,7 @@
     "jest": "^21.2.1"
   },
   "scripts": {
-    "prepack": "babel --out-dir lib src --copy-files",
+    "compile": "babel --out-dir lib src --copy-files",
     "test": "jest",
     "lint": "eslint . --ext js",
     "benchmark": "node lib/search/benchmark.js"
