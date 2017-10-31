@@ -1,7 +1,7 @@
 {
   "name": "wordsearch-algo",
   "description": "A collection of algorithms for solving wordsearches.",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "license": "AGPL-1.0",
   "repository": {
     "type": "git",
