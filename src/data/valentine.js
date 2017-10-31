@@ -3,7 +3,7 @@
 // Source:
 // http://www.couponsaregreat.net/wp-content/uploads/2014/01/valentines-day-word-search-large-light-pink.jpg
 
-const rows = `\
+export const rows = `\
    BZ       MW
   MARD     SHUG
  IELOVE   ONWFHJ
@@ -24,7 +24,7 @@ WTCANDYDHYCABANDF
         I
 `.split('\n');
 
-const words = [
+export const words = [
   "LOVE",
   "CHOCOLATE",
   "PINK",
@@ -41,5 +41,3 @@ const words = [
   "CARD",
   "SWEET",
 ];
-
-module.exports = { words, rows };

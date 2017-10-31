@@ -1,7 +1,5 @@
-const { findMatches: defaultFindMatches } = require('./search/force');
-const { ArrayGrid } = require('./grid');
-const { Directions } = require('./directions');
-const { CharNode } = require('./graph');
+import { findMatches as defaultFindMatches } from './search/force';
+import { ArrayGrid, Directions, CharNode } from './';
 
 const buildGrid = (rows) => {
   const nodeRows = rows.map(row =>
@@ -15,7 +13,7 @@ const buildGrid = (rows) => {
   return grid;
 };
 
-function solve(
+export function solve(
   rows,
   words,
   allowedDirections = Directions,
@@ -28,5 +26,3 @@ function solve(
 
   return { matches, grid };
 }
-
-module.exports = { buildGrid, solve };

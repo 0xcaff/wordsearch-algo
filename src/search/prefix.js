@@ -1,4 +1,4 @@
-function findMatches(words, grid, directions) {
+export function findMatches(words, grid, directions) {
   const matches = {
     // word: [
     //     [nodes],
@@ -128,5 +128,3 @@ function findMatches(words, grid, directions) {
 
   return matches;
 }
-
-module.exports = { findMatches };

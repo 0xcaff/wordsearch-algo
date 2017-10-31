@@ -2,7 +2,7 @@
 // case complexity of this algorithm is O(n * w * l) where n is the number of
 // nodes in the graph, w is the number of words we are searching for and l is
 // the average length of the word we are searching for.
-function findMatches(words, grid, directions) {
+export function findMatches(words, grid, directions) {
   const matches = {
     // word: [
     //     [nodes],
@@ -74,5 +74,3 @@ function findMatches(words, grid, directions) {
 
   return matches;
 }
-
-module.exports = { findMatches };

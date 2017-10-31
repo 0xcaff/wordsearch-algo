@@ -1,5 +1,5 @@
 // A node in a standard character-based word search.
-class CharNode {
+export class CharNode {
   constructor(khar) {
     // The char that this node repersents.
     this.value = khar;
@@ -9,5 +9,3 @@ class CharNode {
     this.partOf = [];
   }
 }
-
-module.exports = { CharNode };

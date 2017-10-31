@@ -1,6 +1,6 @@
-const { solve, Directions } = require('../');
-const algorithms = require('./algorithms');
-const puzzles = require('../data');
+import { solve, Directions } from '../';
+import algorithms from './algorithms';
+import puzzles from '../data';
 
 algorithms.forEach(({ name, f: findMatches }) => {
   describe(`${name} solver`, () => {

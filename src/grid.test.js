@@ -1,5 +1,5 @@
-const { CharNode, ArrayGrid } = require('./');
-const { rows } = require('./data/states');
+import { CharNode, ArrayGrid } from './';
+import { rows } from './data/states';
 
 let grid;
 

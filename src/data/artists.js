@@ -1,7 +1,7 @@
 // A wordsearch of 30 famous artists. Source:
 // http://www.whenwewordsearch.com/word_search/famous_artists/159/word_search.jsp
 
-const rows = `\
+export const rows = `\
 QUSWBMGTMILKVATSUGXEQYOD
 CUAMCJOANMIROEDIAOELCNFC
 DRLETTIRGAMENERWYDZWPYXI
@@ -33,7 +33,7 @@ const elements = document.querySelectorAll('table.defaulttable > tbody > tr > td
 const words = Array.from(elements).map(elem => elem.textContent.trim());
 */
 
-const words = [
+export const words = [
   "ALBRECHT DURER",
   "HENRI MATISSE",
   "PETER PAUL RUBENS",
@@ -66,4 +66,3 @@ const words = [
   "WASSILY KANDINSKY",
 ].map(word => word.replace(/ /g, ''));
 
-module.exports = { words, rows };

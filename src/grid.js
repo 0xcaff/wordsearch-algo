@@ -1,6 +1,6 @@
 // A grid is a data structure which stores and retrive points with a 2d
 // coordinate system. The nodes are stored in a sparse 2d array.
-class ArrayGrid {
+export class ArrayGrid {
   constructor() {
     // A row major, sparse 2d array used to hold nodes in a 2d grid.
     this.data = [
@@ -100,7 +100,7 @@ class ArrayGrid {
 
   shallowCopy() {
     // copy data
-    const newThing = {...this};
+    const newThing = Object.assign({}, this);
 
     // copy behavior
     const proto = Object.getPrototypeOf(this);
@@ -109,5 +109,3 @@ class ArrayGrid {
     return newThing;
   }
 }
-
-module.exports = { ArrayGrid };
