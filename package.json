@@ -1,0 +1,57 @@
+{
+  "name": "wordsearch-algo",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xcaff/wordsearch-algo.git"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "eslint": "^4.10.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext js",
+    "benchmark": "node search/benchmark.js"
+  },
+  "eslintConfig": {
+    "plugins": [
+      "jest"
+    ],
+    "env": {
+      "node": true,
+      "es6": true,
+      "jest/globals": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2017,
+      "ecmaFeatures": {
+        "experimentalObjectRestSpread": true
+      }
+    },
+    "rules": {
+      "jest/no-disabled-tests": "warn",
+      "jest/no-focused-tests": "error",
+      "jest/no-identical-title": "error",
+      "jest/valid-expect": "error",
+      "indent": [
+        "error",
+        2
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "no-warning-comments": [
+        "warn"
+      ],
+      "no-console": "warn"
+    }
+  }
+}
