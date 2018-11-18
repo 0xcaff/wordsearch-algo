@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/jest": "^23.3.7",
     "@types/node": "^10.12.0",
+    "@types/benchmark": "^1.0.31",
     "benchmark": "^2.1.4",
     "jest": "^23.6.0",
     "prettier": "^1.15.2",
@@ -44,8 +45,5 @@
       "json",
       "node"
     ]
-  },
-  "dependencies": {
-    "@types/benchmark": "^1.0.31"
   }
 }
