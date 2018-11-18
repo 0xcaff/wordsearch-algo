@@ -8,64 +8,44 @@
     "url": "https://github.com/0xcaff/wordsearch-algo.git"
   },
   "main": "lib/index.js",
-  "files": [ "lib/", "images/" ],
+  "files": [
+    "lib/",
+    "images/"
+  ],
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^21.2.0",
-    "babel-preset-env": "^1.6.1",
+    "@types/jest": "^23.3.7",
+    "@types/node": "^10.12.0",
     "benchmark": "^2.1.4",
-    "eslint": "^4.10.0",
-    "eslint-plugin-jest": "^21.2.0",
-    "jest": "^21.2.1"
+    "jest": "^23.6.0",
+    "prettier": "^1.15.2",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.3"
   },
   "scripts": {
-    "compile": "babel --out-dir lib src --copy-files",
+    "fix-style": "prettier --write \"**/*.ts\"",
+    "check-style": "prettier --list-different \"**/*.ts\"",
+    "compile": "tsc",
     "test": "jest",
-    "lint": "eslint . --ext js",
     "benchmark": "node lib/search/benchmark.js"
   },
-  "babel": {
-    "presets": [
-      "env"
-    ]
-  },
   "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/lib/"
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
     ]
   },
-  "eslintConfig": {
-    "plugins": [
-      "jest"
-    ],
-    "env": {
-      "node": true,
-      "es6": true,
-      "jest/globals": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-      "sourceType": "module",
-      "ecmaVersion": 2017
-    },
-    "rules": {
-      "jest/no-disabled-tests": "warn",
-      "jest/no-focused-tests": "error",
-      "jest/no-identical-title": "error",
-      "jest/valid-expect": "error",
-      "indent": [
-        "error",
-        2
-      ],
-      "linebreak-style": [
-        "error",
-        "unix"
-      ],
-      "no-warning-comments": [
-        "warn"
-      ],
-      "no-console": "warn"
-    }
+  "dependencies": {
+    "@types/benchmark": "^1.0.31"
   }
 }

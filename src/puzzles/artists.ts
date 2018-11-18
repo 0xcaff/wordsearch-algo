@@ -1,6 +1,8 @@
 // A wordsearch of 30 famous artists. Source:
 // http://www.whenwewordsearch.com/word_search/famous_artists/159/word_search.jsp
 
+export const name = "artist";
+
 export const rows = `\
 QUSWBMGTMILKVATSUGXEQYOD
 CUAMCJOANMIROEDIAOELCNFC
@@ -25,7 +27,7 @@ JARPILUKTGVUNSZRZCRSULMM
 NCBVHOIEEGQIAGOYAJIGOQYK
 KXMNDAPKUHKREPPOHDRAWDEB
 WMEEFREAYTBCUOGVMPUDQAVH
-XXRQLFBLGOTESSITAMIRNEHW`.split('\n');
+XXRQLFBLGOTESSITAMIRNEHW`.split("\n");
 
 // Script used to retrive words:
 /*
@@ -63,6 +65,5 @@ export const words = [
   "VINCENT VAN GOGH",
   "GUSTAV KLIMT",
   "PAUL KLEE",
-  "WASSILY KANDINSKY",
-].map(word => word.replace(/ /g, ''));
-
+  "WASSILY KANDINSKY"
+].map(word => word.replace(/ /g, ""));

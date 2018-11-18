@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "esnext.asynciterable", "es2017.object"],
+    "module": "commonjs",
+    "noImplicitReturns": true,
+    "outDir": "lib",
+    "sourceMap": true,
+    "target": "es6",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "allowJs": false
+  },
+  "compileOnSave": true,
+  "include": [
+    "src"
+  ]
+}
