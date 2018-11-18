@@ -1,4 +1,5 @@
 import { findMatches as findMatchesBruteForce } from "./force";
+import { findMatches as findMatchesPrefixTrie } from "./prefix";
 import { Displacement, Position } from "../directions";
 
 export interface Match {
@@ -17,7 +18,8 @@ interface Algorithm {
 }
 
 const algorithms: Algorithm[] = [
-  { name: "brute force", fn: findMatchesBruteForce }
+  { name: "brute force", fn: findMatchesBruteForce },
+  { name: "prefix trie", fn: findMatchesPrefixTrie }
 ];
 
 export default algorithms;
