@@ -7,8 +7,8 @@ algorithms.forEach(algorithm =>
       it(`should solve the ${puzzle.name} puzzle`, () => {
         const matches = algorithm.fn(puzzle.rows, puzzle.words, Directions);
 
-        expect(matches.map(match => match.word)).toEqual(
-          expect.arrayContaining(puzzle.words)
+        expect(new Set(matches.map(match => match.word))).toEqual(
+          new Set(puzzle.words)
         );
       })
     ))
