@@ -1,4 +1,7 @@
 // A wordsearch of the 50 states of the US used for testing.
+
+export const name = "states";
+
 export const rows = `\
 TEHMICHIGANALGIVBUOIKGZAVJUUXLTVS
 MYAINIGRIVKPDCKYCVPEXZQIFOMZHKYQA
@@ -32,7 +35,7 @@ FHAMISSOURIFVHAQBUQKOMSGHDTODJIYF
 UTBODAROLOCSOTRSHBEKVOEYFYHOXQARE
 OOKLAHOMAEMIFRZNSACCGEORGIAXNZGKQ
 UUJUHRKEJKWYDOPQGARQDYNORTHDAKOTA
-VFTTZRVCIAEZCNNVVLMDGWJQXTQRWMSOZ`.split('\n');
+VFTTZRVCIAEZCNNVVLMDGWJQXTQRWMSOZ`.split("\n");
 
 export const words = [
   "Alabama",
@@ -84,6 +87,5 @@ export const words = [
   "Washington",
   "West Virginia",
   "Wisconsin",
-  "Wyoming",
-].map(e => e.toLocaleUpperCase().replace(' ', ''));
-
+  "Wyoming"
+].map(e => e.toLocaleUpperCase().replace(" ", ""));

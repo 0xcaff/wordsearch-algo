@@ -3,6 +3,8 @@
 // Source:
 // http://www.couponsaregreat.net/wp-content/uploads/2014/01/valentines-day-word-search-large-light-pink.jpg
 
+export const name = "valentine";
+
 export const rows = `\
    BZ       MW
   MARD     SHUG
@@ -22,7 +24,7 @@ WTCANDYDHYCABANDF
       XVZDZ
        XRE
         I
-`.split('\n');
+`.split("\n");
 
 export const words = [
   "LOVE",
@@ -39,5 +41,5 @@ export const words = [
   "HEART",
   "SWEETHEART",
   "CARD",
-  "SWEET",
+  "SWEET"
 ];
