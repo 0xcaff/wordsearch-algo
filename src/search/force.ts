@@ -51,8 +51,8 @@ function tryMatch(
       return null;
     }
 
-    const current = word.charAt(idx);
-    const got = rows[rowIdx].charAt(colIdx);
+    const current = word[idx];
+    const got = rows[rowIdx][colIdx];
     if (got !== current) {
       return null;
     }
