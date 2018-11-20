@@ -13,7 +13,8 @@
     "strictPropertyInitialization": true,
     "noImplicitThis": true,
     "alwaysStrict": true,
-    "allowJs": false
+    "allowJs": false,
+    "declaration": true
   },
   "compileOnSave": true,
   "include": [
