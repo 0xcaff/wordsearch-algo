@@ -23,8 +23,7 @@ WTCANDYDHYCABANDF
      TUCERCH
       XVZDZ
        XRE
-        I
-`.split("\n");
+        I`.split("\n");
 
 export const words = [
   "LOVE",
